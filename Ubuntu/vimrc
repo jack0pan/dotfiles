@@ -1,6 +1,8 @@
 set encoding=utf-8
 syntax enable
 syntax on
+set background=dark
+colorscheme solarized
 
 let g:solarized_termcolors=256
 
@@ -13,15 +15,20 @@ set number
 " 高亮显示搜索结果
 set hlsearch
 
-set tabstop=2
+set ts=2
+set sw=2
+set sts=2
+set et
+set smarttab
+
 set nowrap
 
 set nocompatible              " be iMproved, required
 filetype off                  " required
 
 set foldmethod=indent
-au BufWinLeave * silent mkview  " 保存文件的折叠状态
-au BufRead * silent loadview    " 恢复文件的折叠状态
+" au BufWinLeave * silent mkview  " 保存文件的折叠状态
+" au BufRead * silent loadview    " 恢复文件的折叠状态
 nnoremap <space> za             " 用空格来切换折叠状态
 
 " Ctrl+N 打开/关闭
@@ -57,14 +64,17 @@ call vundle#begin()
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
 
+Plugin 'Valloric/YouCompleteMe'
 Plugin 'tpope/vim-fugitive'
 Plugin 'tmhedberg/SimpylFold'
-Plugin 'Valloric/YouCompleteMe'
 Plugin 'scrooloose/nerdtree'
 " 这个插件可以显示文件的Git增删状态
 Plugin 'Xuyuanp/nerdtree-git-plugin'
 Plugin 'kien/ctrlp.vim'
 Plugin 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
+Plugin 'tpope/vim-rails'
+Plugin 'vim-ruby/vim-ruby'
+Plugin 'tpope/vim-bundler'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
