@@ -1,4 +1,3 @@
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
 #Path to your oh-my-zsh installation.
 export ZSH=/Users/Jack/.oh-my-zsh
 
@@ -50,11 +49,10 @@ ZSH_THEME="agnoster"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git ruby autojump osx)
+plugins=(git ruby autojump osx zsh-autosuggestions)
 
 # User configuration
 
-export PATH="/Users/Jack/.rvm/gems/ruby-2.2.3/bin:/Users/Jack/.rvm/gems/ruby-2.2.3@global/bin:/Users/Jack/.rvm/rubies/ruby-2.2.3/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/Users/Jack/.rvm/bin"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh
@@ -86,8 +84,16 @@ source $ZSH/oh-my-zsh.sh
 
 [[ -s ~/.autojump/etc/profile.d/autojump.sh ]] && . ~/.autojump/etc/profile.d/autojump.sh
 
-export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
-
 export NVM_DIR="/Users/Jack/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
-export LC_ALL=zh_CN.UTF-8
+export LANG=en_US.UTF-8
+export LC_ALL=en_US.UTF-8
+
+export GRADLE_HOME="/Users/jack/Programs/gradle"
+export PATH="$PATH:$GRADLE_HOME/bin"
+export ANDROID_HOME="/Users/jack/Programs/android"
+export PATH="$PATH:$ANDROID_HOME/sdk/platform-tools"
+export PATH="$PATH:$ANDROID_HOME/sdk/tools"
+
+export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+
