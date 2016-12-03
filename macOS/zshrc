@@ -87,7 +87,8 @@ source $ZSH/oh-my-zsh.sh
 export NVM_DIR="/Users/Jack/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 export LANG=en_US.UTF-8
-export LC_ALL=en_US.UTF-8
+# export LC_ALL=en_US.UTF-8
+export LC_ALL=zh_CN.UTF-8
 
 export GRADLE_HOME="/Users/jack/Programs/gradle"
 export PATH="$PATH:$GRADLE_HOME/bin"
@@ -96,4 +97,6 @@ export PATH="$PATH:$ANDROID_HOME/sdk/platform-tools"
 export PATH="$PATH:$ANDROID_HOME/sdk/tools"
 
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+
+export PATH="$PATH:/Library/PostgreSQL/9.5/bin/"
 
