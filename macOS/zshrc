@@ -91,3 +91,6 @@ export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 export NVM_DIR="/Users/Jack/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 export LC_ALL=zh_CN.UTF-8
+
+export PATH="$PATH:/Library/PostgreSQL/9.5/bin/"
+
