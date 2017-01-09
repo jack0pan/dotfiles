@@ -49,7 +49,7 @@ ZSH_THEME="agnoster"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git ruby autojump osx zsh-autosuggestions)
+plugins=(autojump giti gradle osx python rails ruby rvm tmux)
 
 # User configuration
 
@@ -58,7 +58,8 @@ plugins=(git ruby autojump osx zsh-autosuggestions)
 source $ZSH/oh-my-zsh.sh
 
 # You may need to manually set your language environment
-# export LANG=en_US.UTF-8
+export LANG=en_US.UTF-8
+export LC_ALL=en_US.UTF-8
 
 # Preferred editor for local and remote sessions
 # if [[ -n $SSH_CONNECTION ]]; then
@@ -79,16 +80,13 @@ source $ZSH/oh-my-zsh.sh
 # For a full list of active aliases, run `alias`.
 #
 # Example aliases
-# alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
+alias zshconfig="vim ~/.zshrc"
+alias ohmyzsh="vim ~/.oh-my-zsh"
 
 [[ -s ~/.autojump/etc/profile.d/autojump.sh ]] && . ~/.autojump/etc/profile.d/autojump.sh
 
 export NVM_DIR="/Users/Jack/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
-export LANG=en_US.UTF-8
-export LC_ALL=en_US.UTF-8
-# export LC_ALL=zh_CN.UTF-8
 
 export GRADLE_HOME="/Users/jack/Programs/gradle"
 export PATH="$PATH:$GRADLE_HOME/bin"
