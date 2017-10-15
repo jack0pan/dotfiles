@@ -40,6 +40,8 @@ Plugin 'kien/ctrlp.vim'
 
 Plugin 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
 
+Plugin 'fatih/vim-go'
+Plugin 'nsf/gocode', {'rtp': 'vim/'}
 
 call vundle#end()            " required
 filetype plugin indent on    " required
