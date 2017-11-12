@@ -6,7 +6,7 @@ set textwidth=80
 set colorcolumn=+1
 
 " 突显当前行
-set cursorline
+" set cursorline
 " vim启动时关闭代码折叠
 set nofoldenable
 
