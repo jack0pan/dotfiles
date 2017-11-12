@@ -98,5 +98,7 @@ export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 
 export PATH="$PATH:/Library/PostgreSQL/9.5/bin/"
 
+export GOPATH="/Users/Jack/Projects/Go"
+export PATH="$PATH:$GOPATH/bin"
 export PATH="/usr/local/sbin:$PATH"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion

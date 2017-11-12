@@ -47,6 +47,8 @@ Plugin 'kien/ctrlp.vim'
 
 Plugin 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
 
+Plugin 'fatih/vim-go'
+Plugin 'nsf/gocode', {'rtp': 'vim/'}
 Plugin 'slim-template/vim-slim.git'
 
 Plugin 'suan/vim-instant-markdown'
