@@ -87,6 +87,7 @@ alias ohmyzsh="vim ~/.oh-my-zsh"
 
 export NVM_DIR="/Users/Jack/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 export GRADLE_HOME="/Users/jack/Programs/gradle"
 export PATH="$PATH:$GRADLE_HOME/bin"
@@ -98,7 +99,7 @@ export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 
 export PATH="$PATH:/Library/PostgreSQL/9.5/bin/"
 
+export PATH="/usr/local/sbin:$PATH"
+
 export GOPATH="/Users/Jack/Projects/Go"
 export PATH="$PATH:$GOPATH/bin"
-export PATH="/usr/local/sbin:$PATH"
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
