@@ -9,11 +9,12 @@ My OS X & Ubuntu dotfiles.
 - npm
 
 ### OS X
-- MacVim
+- Spacemacs
+- Powerlevel10k
 
 ### Ubuntu
 - Vim
 
 # License
-Copyright (c) 2016 Jack Pan
+Copyright (c) 2021 Jack Pan
 Licensed under the [MIT license](LICENSE.md).
