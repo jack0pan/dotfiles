@@ -102,7 +102,7 @@ export ANDROID_HOME="/Users/jack/Programs/android"
 export PATH="$PATH:$ANDROID_HOME/sdk/platform-tools"
 export PATH="$PATH:$ANDROID_HOME/sdk/tools"
 
-export PATH="/usr/local/opt/node@12/bin:$PATH"
+export PATH="/usr/local/opt/node@14/bin:$PATH"
 export PATH="/usr/local/sbin:/usr/local/bin:$PATH"
 
 export GOPATH="$HOME/Projects/Go"
