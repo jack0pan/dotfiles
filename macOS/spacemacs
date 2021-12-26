@@ -39,8 +39,6 @@ This function should only modify configuration layer settings."
      ;; `M-m f e R' (Emacs style) to install them.
      ;; ----------------------------------------------------------------
      auto-completion
-     ;; better-defaults
-     ;; emacs-lisp
      git
      (go :variables
          go-backend 'lsp
@@ -50,26 +48,26 @@ This function should only modify configuration layer settings."
      lsp
      markdown
      multiple-cursors
-     ;; org
-     plantuml
+     (ruby :variables
+           ruby-version-manager 'rvm
+           ruby-prettier-on-save t)
      (shell :variables
             shell-default-shell 'vterm
             shell-default-term-shell "/bin/zsh"
             shell-default-height 30
             shell-default-position 'bottom
             close-window-with-terminal t)
+     (sql :variables
+          sql-backend 'lsp
+          sql-lsp-sqls-workspace-config-path nil)
      spell-checking
-     ;; syntax-checking
-     ;; version-control
-     (javascript :variables
-                 javascript-backend 'lsp)
-     (typescript :variables
-                 typescript-backend 'lsp)
      (treemacs :variables
-               treemacs-use-follow-mode nil
+               treemacs-use-follow-mode 'tag
+               treemacs-use-filewatch-mode t
                treemacs-use-scope-type 'Perspectives
                treemacs-use-git-mode 'deferred
-               treemacs-use-all-the-icons-theme t))
+               treemacs-use-all-the-icons-theme t)
+     yaml)
 
 
    ;; List of additional packages that will be installed without being wrapped
@@ -261,8 +259,8 @@ It should only modify the values of Spacemacs settings."
    ;; Default font or prioritized list of fonts. The `:size' can be specified as
    ;; a non-negative integer (pixel size), or a floating-point (point size).
    ;; Point size is recommended, because it's device independent. (default 10.0)
-   dotspacemacs-default-font '("Jetbrains Mono"
-                               :size 14.0
+   dotspacemacs-default-font '("JetBrains Mono"
+                               :size 13.0
                                :weight normal
                                :width normal)
 
@@ -548,10 +546,10 @@ This function is called immediately after `dotspacemacs/init', before layer
 configuration.
 It is mostly for variables that should be set before packages are loaded.
 If you are unsure, try setting them in `dotspacemacs/user-config' first."
-  (setq configuration-layer-elpa-archives
-    '(("melpa-cn" . "http://mirrors.tuna.tsinghua.edu.cn/elpa/melpa/")
-      ("org-cn"   . "http://mirrors.tuna.tsinghua.edu.cn/elpa/org/")
-      ("gnu-cn"   . "http://mirrors.tuna.tsinghua.edu.cn/elpa/gnu/")))
+  ;; (setq configuration-layer-elpa-archives
+    ;; '(("melpa-cn" . "http://mirrors.tuna.tsinghua.edu.cn/elpa/melpa/")
+    ;;  ("org-cn"   . "http://mirrors.tuna.tsinghua.edu.cn/elpa/org/")
+    ;;  ("gnu-cn"   . "http://mirrors.tuna.tsinghua.edu.cn/elpa/gnu/")))
   (add-to-list 'auto-mode-alist '("\\.tsx\\'" . typescript-mode))
 )
 
@@ -585,7 +583,7 @@ This function is called at the very end of Spacemacs initialization."
  ;; If there is more than one, they won't work right.
  '(evil-want-Y-yank-to-eol nil)
  '(package-selected-packages
-   '(skewer-mode simple-httpd hierarchy json-snatcher json-reformat multiple-cursors js2-mode typescript-mode lsp-ui lsp-origami origami helm-lsp flycheck-pos-tip pos-tip flycheck-golangci-lint dap-mode lsp-treemacs bui lsp-mode plantuml-mode treemacs-all-the-icons xterm-color vterm terminal-here shell-pop multi-term eshell-z eshell-prompt-extras esh-help tern color-theme-sanityinc-solarized yasnippet-snippets ws-butler writeroom-mode winum which-key web-beautify volatile-highlights vi-tilde-fringe uuidgen use-package undo-tree treemacs-projectile treemacs-persp treemacs-magit treemacs-icons-dired treemacs-evil toc-org tide symon symbol-overlay string-inflection string-edit spaceline-all-the-icons smeargle restart-emacs rainbow-delimiters quickrun prettier-js popwin pcre2el password-generator paradox org-superstar open-junk-file npm-mode nodejs-repl multi-line mmm-mode markdown-toc magit-section lorem-ipsum livid-mode link-hint json-navigator json-mode js2-refactor js-doc indent-guide hybrid-mode hungry-delete hl-todo highlight-parentheses highlight-numbers highlight-indentation helm-xref helm-themes helm-swoop helm-purpose helm-projectile helm-org helm-mode-manager helm-make helm-ls-git helm-gitignore helm-git-grep helm-flx helm-descbinds helm-company helm-c-yasnippet helm-ag google-translate golden-ratio godoctor go-tag go-rename go-impl go-guru go-gen-test go-fill-struct go-eldoc gitignore-templates gitconfig-mode gitattributes-mode git-timemachine git-messenger git-link gh-md fuzzy forge flyspell-correct-helm flx-ido fancy-battery eyebrowse expand-region evil-visualstar evil-visual-mark-mode evil-unimpaired evil-tutor evil-textobj-line evil-surround evil-numbers evil-nerd-commenter evil-mc evil-matchit evil-lisp-state evil-lion evil-indent-plus evil-iedit-state evil-goggles evil-exchange evil-escape evil-ediff evil-easymotion evil-collection evil-cleverparens evil-args evil-anzu eval-sexp-fu editorconfig dumb-jump drag-stuff dotenv-mode dired-quick-sort diminish devdocs define-word company-go column-enforce-mode clean-aindent-mode centered-cursor-mode auto-yasnippet auto-highlight-symbol auto-dictionary aggressive-indent ace-link ace-jump-helm-line ac-ispell)))
+   '(seeing-is-believing rvm ruby-tools ruby-test-mode ruby-refactor ruby-hash-syntax rubocopfmt rubocop rspec-mode robe rbenv rake minitest helm-gtags ggtags enh-ruby-mode counsel-gtags chruby bundler inf-ruby web-mode tagedit slim-mode scss-mode sass-mode pug-mode impatient-mode htmlize helm-css-scss haml-mode emmet-mode counsel-css counsel swiper ivy company-web web-completion-data add-node-modules-path yaml-mode sql-indent skewer-mode simple-httpd hierarchy json-snatcher json-reformat multiple-cursors js2-mode typescript-mode lsp-ui lsp-origami origami helm-lsp flycheck-pos-tip pos-tip flycheck-golangci-lint dap-mode lsp-treemacs bui lsp-mode plantuml-mode treemacs-all-the-icons xterm-color vterm terminal-here shell-pop multi-term eshell-z eshell-prompt-extras esh-help tern color-theme-sanityinc-solarized yasnippet-snippets ws-butler writeroom-mode winum which-key web-beautify volatile-highlights vi-tilde-fringe uuidgen use-package undo-tree treemacs-projectile treemacs-persp treemacs-magit treemacs-icons-dired treemacs-evil toc-org tide symon symbol-overlay string-inflection string-edit spaceline-all-the-icons smeargle restart-emacs rainbow-delimiters quickrun prettier-js popwin pcre2el password-generator paradox org-superstar open-junk-file npm-mode nodejs-repl multi-line mmm-mode markdown-toc magit-section lorem-ipsum livid-mode link-hint json-navigator json-mode js2-refactor js-doc indent-guide hybrid-mode hungry-delete hl-todo highlight-parentheses highlight-numbers highlight-indentation helm-xref helm-themes helm-swoop helm-purpose helm-projectile helm-org helm-mode-manager helm-make helm-ls-git helm-gitignore helm-git-grep helm-flx helm-descbinds helm-company helm-c-yasnippet helm-ag google-translate golden-ratio godoctor go-tag go-rename go-impl go-guru go-gen-test go-fill-struct go-eldoc gitignore-templates gitconfig-mode gitattributes-mode git-timemachine git-messenger git-link gh-md fuzzy forge flyspell-correct-helm flx-ido fancy-battery eyebrowse expand-region evil-visualstar evil-visual-mark-mode evil-unimpaired evil-tutor evil-textobj-line evil-surround evil-numbers evil-nerd-commenter evil-mc evil-matchit evil-lisp-state evil-lion evil-indent-plus evil-iedit-state evil-goggles evil-exchange evil-escape evil-ediff evil-easymotion evil-collection evil-cleverparens evil-args evil-anzu eval-sexp-fu editorconfig dumb-jump drag-stuff dotenv-mode dired-quick-sort diminish devdocs define-word company-go column-enforce-mode clean-aindent-mode centered-cursor-mode auto-yasnippet auto-highlight-symbol auto-dictionary aggressive-indent ace-link ace-jump-helm-line ac-ispell)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
