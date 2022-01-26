@@ -6,7 +6,7 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
 fi
 
 #Path to your oh-my-zsh installation.
-export ZSH=/Users/Jack/.oh-my-zsh
+export ZSH=${ZSH_CUSTOM:-$HOME/.oh-my-zsh}
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
@@ -56,7 +56,7 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(autojump git gradle osx python rails ruby tmux)
+plugins=(autojump git gradle macos python rails ruby tmux)
 
 # User configuration
 
