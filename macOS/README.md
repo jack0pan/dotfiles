@@ -12,3 +12,7 @@
 - [Melso Nerd Font](https://github.com/romkatv/powerlevel10k#meslo-nerd-font-patched-for-powerlevel10k)
 - [Terminal color theme](https://github.com/tomislav/osx-terminal.app-colors-solarized)
 
+## tmux
+
+- `brew install reattach-to-user-namespace`
+
