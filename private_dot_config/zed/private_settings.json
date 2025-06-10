@@ -58,6 +58,20 @@
       "language_servers": ["ruby-lsp", "rubocop", "!solargraph"]
     }
   },
+  "lsp": {
+    "rubocop": {
+      "initialization_options": {
+        "safeAutocorrect": false
+      }
+    },
+    "ruby-lsp": {
+      "initialization_options": {
+        "enabledFeatures": {
+          "diagnostics": false
+        }
+      }
+    }
+  },
   "context_servers": {
     "context7": {
       "command": {
