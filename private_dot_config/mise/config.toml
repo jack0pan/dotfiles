@@ -1,0 +1,8 @@
+[tools]
+java = "17"
+node = "20"
+ruby = "3.3.4"
+
+[settings]
+idiomatic_version_file_enable_tools = [ "ruby" ]
+
