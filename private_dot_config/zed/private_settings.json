@@ -23,9 +23,9 @@
   "tabs": { "file_icons": true },
   "preferred_line_length": 100,
   "theme": {
-    "mode": "system",
+    "mode": "dark",
     "light": "One Light",
-    "dark": "One Dark"
+    "dark": "Dracula"
   },
   "buffer_font_family": "JetBrainsMono Nerd Font",
   "buffer_font_size": 14,
@@ -74,6 +74,7 @@
   },
   "context_servers": {
     "context7": {
+      "source": "custom",
       "command": {
         "path": "bunx",
         "args": ["-y", "@upstash/context7-mcp@latest"]
