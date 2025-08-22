@@ -28,6 +28,7 @@ $hg_branch\
 $pijul_channel\
 $docker_context\
 $package\
+$bun\
 $c\
 $cpp\
 $cmake\
@@ -199,6 +200,9 @@ staged = "[▪┤[$count](bold white)│](italic bright-cyan)"
 renamed = "[◎◦](italic bright-blue)"
 deleted = "[✕](italic red)"
 
+[bun]
+format = " [bun](italic) [${version}]($style)"
+
 [deno]
 format = " [deno](italic) [∫ $version](green bold)"
 version_format = "${raw}"
@@ -212,8 +216,8 @@ style = "bold bright-yellow"
 [nodejs]
 format = " [node](italic) [◫ ($version)](bold bright-green)"
 version_format = "${raw}"
-detect_files = ["package-lock.json", "yarn.lock"]
-detect_folders = ["node_modules"]
+detect_files = ["package-lock.json", "yarn.lock", "pnpm-lock.yaml"]
+detect_folders = []
 detect_extensions = []
 
 [python]
