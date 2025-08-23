@@ -53,21 +53,24 @@
       "code_actions_on_format": {
         "source.fixAll.biome": true,
         "source.organizeImports.biome": true
-      }
+      },
+      "language_servers": ["typescript-language-server", "!vtsls", "..."]
     },
     "TypeScript": {
       "formatter": { "language_server": { "name": "biome" } },
       "code_actions_on_format": {
         "source.fixAll.biome": true,
         "source.organizeImports.biome": true
-      }
+      },
+      "language_servers": ["typescript-language-server", "!vtsls", "..."]
     },
     "TSX": {
       "formatter": { "language_server": { "name": "biome" } },
       "code_actions_on_format": {
         "source.fixAll.biome": true,
         "source.organizeImports.biome": true
-      }
+      },
+      "language_servers": ["typescript-language-server", "!vtsls", "..."]
     },
     "JSON": { "formatter": { "language_server": { "name": "biome" } } },
     "JSONC": { "formatter": { "language_server": { "name": "biome" } } },
