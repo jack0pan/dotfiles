@@ -23,9 +23,9 @@
   "tabs": { "file_icons": true },
   "preferred_line_length": 100,
   "theme": {
-    "mode": "dark",
+    "mode": "system",
     "light": "One Light",
-    "dark": "Dracula"
+    "dark": "One Dark"
   },
   "buffer_font_family": "JetBrainsMono Nerd Font",
   "buffer_font_size": 14,
