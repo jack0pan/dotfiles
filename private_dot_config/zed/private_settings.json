@@ -15,7 +15,7 @@
     },
     "enabled_in_text_threads": false
   },
-  "show_edit_predictions": false,
+  "show_edit_predictions": true,
   "features": {
     "edit_prediction_provider": "zed"
   },
@@ -53,29 +53,25 @@
       "code_actions_on_format": {
         "source.fixAll.biome": true,
         "source.organizeImports.biome": true
-      },
-      "language_servers": ["typescript-language-server", "!vtsls", "..."]
+      }
     },
     "TypeScript": {
       "formatter": { "language_server": { "name": "biome" } },
       "code_actions_on_format": {
         "source.fixAll.biome": true,
         "source.organizeImports.biome": true
-      },
-      "language_servers": ["typescript-language-server", "!vtsls", "..."]
+      }
     },
     "TSX": {
       "formatter": { "language_server": { "name": "biome" } },
       "code_actions_on_format": {
         "source.fixAll.biome": true,
         "source.organizeImports.biome": true
-      },
-      "language_servers": ["typescript-language-server", "!vtsls", "..."]
+      }
     },
     "JSON": { "formatter": { "language_server": { "name": "biome" } } },
     "JSONC": { "formatter": { "language_server": { "name": "biome" } } },
     "CSS": { "formatter": { "language_server": { "name": "biome" } } },
-    "GraphQL": { "formatter": { "language_server": { "name": "biome" } } },
     "Python": {
       "format_on_save": { "language_server": { "name": "ruff" } },
       "formatter": { "language_server": { "name": "ruff" } },
@@ -107,10 +103,9 @@
   "context_servers": {
     "context7": {
       "source": "custom",
-      "command": {
-        "path": "bunx",
-        "args": ["-y", "@upstash/context7-mcp@latest"]
-      }
+      "command": "bunx",
+      "args": ["-y", "@upstash/context7-mcp@latest"]
     }
   }
 }
+
