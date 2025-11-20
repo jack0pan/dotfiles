@@ -8,6 +8,8 @@ fish_config theme choose "Dracula Official"
 
 set -gx LANG en_US.UTF-8
 set -gx LC_ALL en_US.UTF-8
+set -gx TERM xterm-256color
+
 if test -d (brew --prefix)"/share/fish/completions"
     set -p fish_complete_path (brew --prefix)/share/fish/completions
 end

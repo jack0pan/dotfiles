@@ -38,14 +38,19 @@
     "play_sound_when_agent_done": true,
     "always_allow_tool_actions": true,
     "inline_assistant_model": {
-      "provider": "zed.dev",
-      "model": "claude-sonnet-4-latest"
+      "provider": "google",
+      "model": "gemini-2.5-pro"
     },
     "default_profile": "ask",
     "default_model": {
-      "provider": "zed.dev",
-      "model": "claude-sonnet-4-latest"
-    },
+      "provider": "google",
+      "model": "gemini-3-pro-preview"
+    }
+  },
+  "agent_servers": {
+    "gemini": {
+      "ignore_system_version": false
+    }
   },
   "languages": {
     "JavaScript": {
@@ -91,7 +96,16 @@
       "language_servers": ["pyright", "ruff"]
     },
     "Ruby": {
-      "language_servers": ["ruby-lsp", "rubocop", "!solargraph"]
+      "language_servers": ["ruby-lsp", "rubocop", "!solargraph", "..."]
+    },
+    "HTML+ERB": {
+      "language_servers": ["herb", "ruby-lsp", "..."]
+    },
+    "JS+ERB": {
+      "language_servers": ["ruby-lsp", "..."]
+    },
+    "YAML+ERB": {
+      "language_servers": ["ruby-lsp", "..."]
     }
   },
   "lsp": {
@@ -111,13 +125,6 @@
           "diagnostics": false
         }
       }
-    }
-  },
-  "context_servers": {
-    "context7": {
-      "source": "custom",
-      "command": "bunx",
-      "args": ["-y", "@upstash/context7-mcp@latest"]
     }
   }
 }
