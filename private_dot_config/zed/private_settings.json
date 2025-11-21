@@ -50,21 +50,25 @@
         { "language_server": { "name": "biome" } },
         { "code_action": "source.organizeImports.biome" },
         { "code_action": "source.fixAll.biome" }
-      ]
+      ],
+      "language_servers": ["typescript-language-server", "!eslint", "!vtsls", "..."]
     },
     "TypeScript": {
       "formatter": [
         { "language_server": { "name": "biome" } },
         { "code_action": "source.organizeImports.biome" },
         { "code_action": "source.fixAll.biome" }
-      ]
+      ],
+      "language_servers": ["typescript-language-server", "!eslint", "!vtsls", "..."],
+      "prettier": { "allowed": false }
     },
     "TSX": {
       "formatter": [
         { "language_server": { "name": "biome" } },
         { "code_action": "source.organizeImports.biome" },
         { "code_action": "source.fixAll.biome" }
-      ]
+      ],
+      "language_servers": ["typescript-language-server", "!eslint", "!vtsls", "..."]
     },
     "JSON": {
       "formatter": [
@@ -88,7 +92,7 @@
       "language_servers": ["pyright", "ruff"]
     },
     "Ruby": {
-      "language_servers": ["ruby-lsp", "rubocop", "tailwindcss-language-server", "!solargraph", "!sorbet", "..."]
+      "language_servers": ["ruby-lsp", "rubocop", "tailwindcss-language-server", "!solargraph", "!sorbet", "!steep", "..."]
     },
     "HTML+ERB": {
       "language_servers": ["herb", "ruby-lsp", "..."]
@@ -122,6 +126,20 @@
       "settings": {
         "experimental": {
           "classRegex": ["\\bclass:\\s*['\"]([^'\"]*)['\"]"]
+        }
+      }
+    },
+    "typescript-language-server": {
+      "initialization_options": {
+        "preferences": {
+          "includeInlayParameterNameHints": "all",
+          "includeInlayParameterNameHintsWhenArgumentMatchesName": true,
+          "includeInlayFunctionParameterTypeHints": true,
+          "includeInlayVariableTypeHints": true,
+          "includeInlayVariableTypeHintsWhenTypeMatchesName": true,
+          "includeInlayPropertyDeclarationTypeHints": true,
+          "includeInlayFunctionLikeReturnTypeHints": true,
+          "includeInlayEnumMemberValueHints": true
         }
       }
     }
