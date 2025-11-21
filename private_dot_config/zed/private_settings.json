@@ -88,7 +88,7 @@
       "language_servers": ["pyright", "ruff"]
     },
     "Ruby": {
-      "language_servers": ["ruby-lsp", "rubocop", "!solargraph", "..."]
+      "language_servers": ["ruby-lsp", "rubocop", "tailwindcss-language-server", "!solargraph", "!sorbet", "..."]
     },
     "HTML+ERB": {
       "language_servers": ["herb", "ruby-lsp", "..."]
@@ -115,6 +115,13 @@
       "initialization_options": {
         "enabledFeatures": {
           "diagnostics": false
+        }
+      }
+    },
+    "tailwindcss-language-server": {
+      "settings": {
+        "experimental": {
+          "classRegex": ["\\bclass:\\s*['\"]([^'\"]*)['\"]"]
         }
       }
     }
