@@ -89,7 +89,7 @@
       "formatter": [
         { "language_server": { "name": "ruff" } }
       ],
-      "language_servers": ["pyright", "ruff"]
+      "language_servers": ["ty", "!basedpyright", "!pyright", "..."]
     },
     "Ruby": {
       "language_servers": ["ruby-lsp", "rubocop", "tailwindcss-language-server", "!solargraph", "!sorbet", "!steep", "..."]
