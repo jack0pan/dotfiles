@@ -8,9 +8,6 @@
     "enabled_in_text_threads": false
   },
   "show_edit_predictions": true,
-  "features": {
-    "edit_prediction_provider": "zed"
-  },
   "icon_theme": "Material Icon Theme",
   "tabs": { "file_icons": true },
   "preferred_line_length": 100,
@@ -28,15 +25,14 @@
   },
   "agent": {
     "play_sound_when_agent_done": true,
-    "always_allow_tool_actions": true,
     "inline_assistant_model": {
       "provider": "google",
-      "model": "gemini-2.5-pro"
+      "model": "gemini-3-flash-preview"
     },
     "default_profile": "ask",
     "default_model": {
       "provider": "google",
-      "model": "gemini-3-pro-preview"
+      "model": "gemini-3-flash-preview"
     }
   },
   "agent_servers": {
@@ -92,16 +88,16 @@
       "language_servers": ["ty", "!basedpyright", "!pyright", "..."]
     },
     "Ruby": {
-      "language_servers": ["ruby-lsp", "rubocop", "tailwindcss-language-server", "!solargraph", "!sorbet", "!steep", "..."]
+      "language_servers": ["ruby-lsp", "rubocop", "tailwindcss-language-server", "!solargraph", "!sorbet", "!steep", "!kanayago", "..."]
     },
     "HTML+ERB": {
-      "language_servers": ["herb", "ruby-lsp", "..."]
+      "language_servers": ["herb", "ruby-lsp", "!kanayago", "..."]
     },
     "JS+ERB": {
-      "language_servers": ["ruby-lsp", "..."]
+      "language_servers": ["ruby-lsp", "!kanayago", "..."]
     },
     "YAML+ERB": {
-      "language_servers": ["ruby-lsp", "..."]
+      "language_servers": ["ruby-lsp", "!kanayago", "..."]
     }
   },
   "lsp": {
