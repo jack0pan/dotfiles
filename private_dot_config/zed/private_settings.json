@@ -35,11 +35,6 @@
       "model": "gemini-3-flash-preview"
     }
   },
-  "agent_servers": {
-    "gemini": {
-      "ignore_system_version": false
-    }
-  },
   "languages": {
     "JavaScript": {
       "formatter": [
