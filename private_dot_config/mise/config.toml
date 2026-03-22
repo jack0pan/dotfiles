@@ -1,8 +1,9 @@
 [tools]
 java = "21"
-node = "20"
-ruby = "3.4.5"
+node = "24"
+python = "3.13"
+ruby = "3"
 
 [settings]
-idiomatic_version_file_enable_tools = [ "ruby", "python", "java" ]
+idiomatic_version_file_enable_tools = [ "java", "node", "python", "ruby" ]
 
