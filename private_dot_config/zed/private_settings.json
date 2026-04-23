@@ -15,8 +15,8 @@
     "provider": "open_ai_compatible_api",
     "open_ai_compatible_api": {
       "prompt_format": "deepseek_coder",
-      "model": "deepseek-reasoner",
-      "api_url": "https://api.deepseek.com/v1"
+      "model": "deepseek-chat",
+      "api_url": "https://api.deepseek.com/beta/completions"
     },
     "mode": "subtle",
     "copilot": {

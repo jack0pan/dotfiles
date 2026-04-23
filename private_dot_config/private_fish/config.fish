@@ -25,10 +25,6 @@ set -l output (mole completion fish 2>/dev/null); and echo "$output" | source
 source ~/.orbstack/shell/init2.fish 2>/dev/null || :
 
 fish_add_path "$HOME/.bun/bin"
-fish_add_path /opt/homebrew/opt/rustup/bin
-<<<<<<< Updated upstream
-fish_add_path "$HOME/.antigravity/antigravity/bin"
 fish_add_path "$HOME/.local/bin"
-=======
->>>>>>> Stashed changes
+fish_add_path /opt/homebrew/opt/rustup/bin
 
