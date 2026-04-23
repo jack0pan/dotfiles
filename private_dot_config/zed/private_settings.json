@@ -1,11 +1,28 @@
-{
+ {
+  "project_panel": {
+    "dock": "right"
+  },
+  "outline_panel": {
+    "dock": "right"
+  },
+  "collaboration_panel": {
+    "dock": "right"
+  },
+  "git_panel": {
+    "dock": "right"
+  },
   "edit_predictions": {
+    "provider": "open_ai_compatible_api",
+    "open_ai_compatible_api": {
+      "prompt_format": "deepseek_coder",
+      "model": "deepseek-reasoner",
+      "api_url": "https://api.deepseek.com/v1"
+    },
     "mode": "subtle",
     "copilot": {
       "proxy": null,
       "proxy_no_verify": null
-    },
-    "enabled_in_text_threads": false
+    }
   },
   "show_edit_predictions": true,
   "icon_theme": "Material Icon Theme",
@@ -24,15 +41,15 @@
     "font_size": 13
   },
   "agent": {
-    "play_sound_when_agent_done": true,
+    "dock": "left",
     "inline_assistant_model": {
-      "provider": "google",
-      "model": "gemini-3-flash-preview"
+      "provider": "deepseek",
+      "model": "deepseek-chat"
     },
     "default_profile": "ask",
     "default_model": {
-      "provider": "google",
-      "model": "gemini-3-flash-preview"
+      "provider": "deepseek",
+      "model": "deepseek-reasoner"
     }
   },
   "languages": {
@@ -63,15 +80,15 @@
     },
     "JSON": {
       "formatter": [
-        { "language_server": { "name": "biome" } } 
+        { "language_server": { "name": "biome" } }
       ]
     },
     "JSONC": {
       "formatter": [
         { "language_server": { "name": "biome" } }
-      ] 
+      ]
     },
-    "CSS": { 
+    "CSS": {
       "formatter": [
         { "language_server": { "name": "biome" } }
       ]
@@ -136,4 +153,4 @@
     }
   }
 }
-
+ 
