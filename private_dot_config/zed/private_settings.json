@@ -100,7 +100,7 @@
       "language_servers": ["ty", "!basedpyright", "!pyright", "..."]
     },
     "Ruby": {
-      "language_servers": ["ruby-lsp", "rubocop", "tailwindcss-language-server", "!solargraph", "!sorbet", "!steep", "!kanayago", "..."]
+      "language_servers": ["ruby-lsp", "rubocop", "tailwindcss-language-server", "!solargraph", "!sorbet", "!steep", "!kanayago", "!fuzzy-ruby-server", "..."]
     },
     "HTML+ERB": {
       "language_servers": ["herb", "ruby-lsp", "!kanayago", "..."]

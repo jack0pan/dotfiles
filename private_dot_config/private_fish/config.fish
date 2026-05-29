@@ -26,5 +26,4 @@ source ~/.orbstack/shell/init2.fish 2>/dev/null || :
 
 fish_add_path "$HOME/.bun/bin"
 fish_add_path "$HOME/.local/bin"
-fish_add_path /opt/homebrew/opt/rustup/bin
 
