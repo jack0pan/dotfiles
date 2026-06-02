@@ -55,11 +55,11 @@
         "tab.inactive_background": "#1c1d26ff",
         "tab.active_background": "#282a36ff",
         "search.match_background": "#50fa7b50",
-        "panel.background": "#0a080cbb",
+        "panel.background": "#16121bff",
         "panel.focused_border": "#C9A8F9FF",
         "panel.indent_guide": "#f8f8f220",
-        "panel.indent_guide_active": "#bd93f950",
-        "panel.indent_guide_hover": "#bd93f935",
+        "panel.indent_guide_active": "#C9A8F950",
+        "panel.indent_guide_hover": "#C9A8F935",
         "pane.focused_border": "#C9A8F9FF",
         "pane_group.border": "#3c324bcc",
         "scrollbar.thumb.background": "#C9A8F977",
@@ -407,7 +407,16 @@
         "terminal.ansi.dim_cyan": "#6fbacaff",
         "terminal.ansi.white": "#f8f8f2ff",
         "terminal.ansi.bright_white": "ffffffff",
-        "terminal.ansi.dim_white": "#c6c6c2ff"
+        "terminal.ansi.dim_white": "#c6c6c2ff",
+        "vim.normal.background": "#8be9fdff",
+        "vim.insert.background": "#50fa7bff",
+        "vim.replace.background": "#ff5555ff",
+        "vim.visual.background": "#bd93f9ff",
+        "vim.visual_line.background": "#bd93f9ff",
+        "vim.visual_block.background": "#bd93f9ff",
+        "vim.helix_normal.background": "#8be9fdff",
+        "vim.helix_select.background": "#50fa7bff",
+        "vim.mode.text": "#282a36ff"
       }
     },
     {
@@ -818,7 +827,7 @@
       }
     },
     {
-      "name": "Dracula Light (Alucard",
+      "name": "Dracula Light (Alucard)",
       "appearance": "light",
       "style": {
         "accents": [
@@ -1222,7 +1231,16 @@
         "terminal.ansi.dim_cyan": "#D74B3B",
         "terminal.ansi.white": "#1F1F1F",
         "terminal.ansi.bright_white": "#2C2B31",
-        "terminal.ansi.dim_white": "#D74B3B"
+        "terminal.ansi.dim_white": "#D74B3B",
+        "vim.normal.background": "#036A96",
+        "vim.insert.background": "#14710A",
+        "vim.replace.background": "#CB3A2A",
+        "vim.visual.background": "#644AC9",
+        "vim.visual_line.background": "#644AC9",
+        "vim.visual_block.background": "#644AC9",
+        "vim.helix_normal.background": "#036A96",
+        "vim.helix_select.background": "#14710A",
+        "vim.mode.text": "#F5F5F5"
       }
     }
   ]
