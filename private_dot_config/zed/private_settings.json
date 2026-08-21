@@ -29,15 +29,15 @@
   "tabs": { "file_icons": true },
   "preferred_line_length": 100,
   "theme": {
-    "mode": "dark",
-    "light": "One Light",
-    "dark": " Dracula"
+    "mode": "system",
+    "light": "Dracula Light (Alucard)",
+    "dark": "Dracula Solid"
   },
-  "buffer_font_family": "JetBrainsMono Nerd Font",
+  "buffer_font_family": "Maple Mono NF CN",
   "buffer_font_size": 14,
   "vim_mode": true,
   "terminal": {
-    "font_family": "JetBrainsMono Nerd Font",
+    "font_family": "Maple Mono NF CN",
     "font_size": 14
   },
   "agent": {
